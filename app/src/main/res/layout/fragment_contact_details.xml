@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/userAvater"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/user_avater" />
+
+        <TextView
+            android:id="@+id/contactNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/userAvater"
+            android:background="#39CCDDCC"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="This is User name" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/phoneNumberTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contactNameTV"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:text="Phone Number" />
+
+        <TextView
+            android:id="@+id/numberTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phoneNumberTV"
+            android:paddingStart="10dp"
+            tools:ignore="RtlSymmetry"
+            tools:text="01723717933" />
+
+        <ImageView
+            android:id="@+id/callIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contactNameTV"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/ic_baseline_call_24" />
+
+        <TextView
+            android:id="@+id/addressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numberTv"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:text="Address"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressLabel"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-37dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/ic_baseline_my_location_24" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addressLabel"
+            android:paddingLeft="10dp"
+            tools:text="TOllerbag, Mirpur-1, Dhaka-1200" />
+
+        <TextView
+            android:id="@+id/messageLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:layout_below="@id/address"/>
+
+        <ImageView
+            android:id="@+id/emailIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/messageLabel"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-41dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/ic_baseline_chat_bubble_outline_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="message number : 017********"
+            android:layout_below="@id/messageLabel"
+            android:paddingLeft="10dp"/>
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
